@@ -45,6 +45,8 @@ rownames(results) <- c("none","aids")
 
 ## Results
 <!-- You are to add descriptive comments to explain to the reader what the plot is showing !-->
+  
+The plot shows us that from 16,402 volunteers, two groups were made. One with volunteers carrying aids, and one without. In the aids group, 5 subjects returned with no aids after given the vaccine, while 2 subject returned with no aids after given a placebo.  
 
 ### Graphical results
 <!--Display graphical evidence as to the effectiveness of the vaccine with explanations!-->
@@ -68,11 +70,18 @@ rowPerc(results)
 
 <!--Display inferential evidence as to the effectiveness of the vaccine with explanations and interpretations!-->
 
+
+There is no relationship between getting aids and having taken the aids vaccine  
+  
+There is a relation between aids and having the aids vaccine  
+  
 ```{r}
 chisqtestGC(results, graph = TRUE)
 ```
-
+The p-value 
 
 ## Conclusions
 
 <Summarise your results as to the effectiveness of the vaccine with explanations that could be understood by your mom>
+
+While the vaccine has proven to have a positive effect, the probability of the vaccine working, is slim.
